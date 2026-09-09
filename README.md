@@ -108,10 +108,6 @@ Three of those products are the same idea wearing different clothes.
 
 Smaller things I build to answer a question I actually have.
 
-<img src="https://raw.githubusercontent.com/Sai-Vidyut/Sai-Vidyut/main/assets/radio-auto-scene.jpg" width="58%" alt="Radio Auto's canonical hero plate: the passenger's view from the back seat of a Mumbai auto-rickshaw at night in the rain, looking past the driver onto a wet, traffic-lit street.">
-
-**[Radio Auto](https://github.com/Sai-Vidyut/radio-auto)** — Sit in the back of a Mumbai auto-rickshaw. That plate is the whole product: same driver, same cabin, never swapped. Time and weather are independent axes, so heavy rain works at any hour, and the radio and the weather run on separate audio elements rather than one mixed track.
-
 **GeoChat on Colab** — A self-contained notebook that supervises a GPU inference service for the 7B vision model, hardened against OOM during model load and against stale exit-file races when the service restarts. Lives inside [SatQuery AI](https://github.com/Sai-Vidyut/SatQuery-AI).
 
 **[Instagram Dashboard](https://github.com/Sai-Vidyut/Instagram-Dashboard)** — My first pass at keeping an integration boundary honest: routes, services, and repositories are separated so the mock Composio layer can be replaced with live SDK calls without the API contract moving. [Live](https://instagram-dashboard-pearl.vercel.app).
@@ -134,7 +130,6 @@ correctness       Zod · Vitest · Playwright · pytest
 
 ```
 2026-09-06   satquery-ai   seasonality-aware Earth Engine change detection
-2026-08-30   radio-auto    Mumbai playlist, glass player, weather audio
 2026-08-29   razorflow     post-payment desk state, staff-only policy auth
 2026-08-28   razorflow     hybrid discovery: Gemini intent, deterministic catalog
 2026-08-21   docna         document workspace pipeline and review UI
