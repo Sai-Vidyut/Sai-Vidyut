@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sai-Vidyut/Sai-Vidyut/main/assets/hero-dark.svg">
-  <img alt="Sai Vidyut C — The model interprets. The code decides. Four products built since June 2026: SatQuery AI, RazorFlow, DocNA, BluePrint." src="https://raw.githubusercontent.com/Sai-Vidyut/Sai-Vidyut/main/assets/hero-light.svg" width="100%">
+  <img alt="Sai Vidyut C — The model interprets. The code decides. Five products built since March 2026: Clip Management System, SatQuery AI, RazorFlow, DocNA, BluePrint." src="https://raw.githubusercontent.com/Sai-Vidyut/Sai-Vidyut/main/assets/hero-light.svg" width="100%">
 </picture>
 
 I build AI products where the model is one component, not the architecture. The interesting part is never the prompt — it's the boundary I put around it.
@@ -108,6 +108,8 @@ Three of those products are the same idea wearing different clothes.
 
 Smaller things I build to answer a question I actually have.
 
+**[Clip Management System](https://github.com/Sai-Vidyut/clip-management-system)** — My first full-stack media app: upload video clips, extract metadata with ExifTool, generate thumbnails with FFmpeg, and store everything in Azure Blob Storage. FastAPI and SQLAlchemy on the backend; React, Vite, and TanStack Query on the front. Built March 2026, published September 2026.
+
 **GeoChat on Colab** — A self-contained notebook that supervises a GPU inference service for the 7B vision model, hardened against OOM during model load and against stale exit-file races when the service restarts. Lives inside [SatQuery AI](https://github.com/Sai-Vidyut/SatQuery-AI).
 
 **[Instagram Dashboard](https://github.com/Sai-Vidyut/Instagram-Dashboard)** — My first pass at keeping an integration boundary honest: routes, services, and repositories are separated so the mock Composio layer can be replaced with live SDK calls without the API contract moving. [Live](https://instagram-dashboard-pearl.vercel.app).
@@ -119,8 +121,10 @@ Smaller things I build to answer a question I actually have.
 ```
 product surface   TypeScript · Next.js App Router · React · Tailwind
 systems & ai      Python · FastAPI · Pydantic · Gemini · provider fallback chains
-data              PostgreSQL · Prisma · SQLAlchemy
+data              PostgreSQL · Prisma · SQLAlchemy · SQLite
+storage           Azure Blob Storage
 geospatial        MapLibre GL · Google Earth Engine · GeoTIFF, optical + SAR
+media             FFmpeg · ExifTool
 correctness       Zod · Vitest · Playwright · pytest
 ```
 
@@ -129,18 +133,21 @@ correctness       Zod · Vitest · Playwright · pytest
 ### `06` &nbsp;Build log
 
 ```
-2026-09-06   satquery-ai   seasonality-aware Earth Engine change detection
-2026-08-29   razorflow     post-payment desk state, staff-only policy auth
-2026-08-28   razorflow     hybrid discovery: Gemini intent, deterministic catalog
-2026-08-21   docna         document workspace pipeline and review UI
-2026-08-18   blueprint     in-blueprint AI assistant with chat and change flow
+2026-09-06   satquery-ai            seasonality-aware Earth Engine change detection
+2026-08-29   razorflow              post-payment desk state, staff-only policy auth
+2026-08-28   razorflow              hybrid discovery: Gemini intent, deterministic catalog
+2026-08-21   docna                  document workspace pipeline and review UI
+2026-08-18   blueprint              in-blueprint AI assistant with chat and change flow
+2026-03-23   clip-management-system clip CRUD, sidebar filters, upload modal, v1.0.0
+2026-03-18   clip-management-system React dashboard, clip grid, Azure-backed API client
+2026-03-12   clip-management-system FastAPI backend, FFmpeg thumbnails, Azure Blob Storage
 ```
 
 <br>
 
 ### `07` &nbsp;Signal
 
-The contribution grid, eaten in order — everything above was built in the stretch on the right, all of it since June 2026. Regenerated daily by [a workflow in this repo](.github/workflows/snake.yml) and served from here, not a third-party widget.
+The contribution grid, eaten in order — the March stretch is [Clip Management System](https://github.com/Sai-Vidyut/clip-management-system); the dense run on the right is everything since June 2026. Regenerated daily by [a workflow in this repo](.github/workflows/snake.yml) and served from the `output` branch, not a third-party widget.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sai-Vidyut/Sai-Vidyut/output/snake-dark.svg">
