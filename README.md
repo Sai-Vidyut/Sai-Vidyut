@@ -129,7 +129,6 @@ correctness       Zod · Vitest · Playwright · pytest
 ### `06` &nbsp;Build log
 
 ```
-2026-09-08   satquery-ai   evidence-scoped GeoChat conversation, region evidence
 2026-09-06   satquery-ai   seasonality-aware Earth Engine change detection
 2026-08-30   radio-auto    Mumbai playlist, glass player, weather audio
 2026-08-29   razorflow     post-payment desk state, staff-only policy auth
