@@ -145,7 +145,7 @@ correctness       Zod · Vitest · Playwright · pytest
 
 ### `07` &nbsp;Signal
 
-The contribution grid, eaten in order. The dense stretch on the right is everything above — all of it since June 2026. Regenerated daily by [a workflow in this repo](.github/workflows/snake.yml) from the real graph, and served from here rather than a third-party widget, so it cannot break when someone else's free tier does.
+The contribution grid, eaten in order — everything above was built in the stretch on the right, all of it since June 2026. Regenerated daily by [a workflow in this repo](.github/workflows/snake.yml) and served from here, not a third-party widget.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sai-Vidyut/Sai-Vidyut/output/snake-dark.svg">
