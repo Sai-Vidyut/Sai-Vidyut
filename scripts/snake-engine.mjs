@@ -85,8 +85,8 @@ var lerp = (k, a, b) => (1 - k) * a + k * b, createSnake = (chain, { sizeCell, s
       snakeParts[i].push(cells[i]);
   }
   const svgElements = snakeParts.map((_, i, { length }) => {
-    const dMin = sizeDot * 0.75;
-    const dMax = sizeCell * (i === 0 ? 1.05 : 0.9);
+    const dMin = sizeDot * 0.8;
+    const dMax = sizeCell * 0.9;
     const iMax = Math.min(4, length);
     const u = (1 - Math.min(i, iMax) / iMax) ** 2;
     const s = lerp(u, dMin, dMax);
@@ -103,11 +103,6 @@ var lerp = (k, a, b) => (1 - k) * a + k * b, createSnake = (chain, { sizeCell, s
     });
   });
   const transform = ({ x, y }) => `transform:translate(${x * sizeCell}px,${y * sizeCell}px)`;
-  const sizeAt = (t, dMin, dMax) => {
-    const s = lerp(Math.min(1, Math.max(0, t)), dMin, dMax);
-    const m = (sizeCell - s) / 2;
-    return `width:${s.toFixed(1)}px;height:${s.toFixed(1)}px;x:${m.toFixed(1)}px;y:${m.toFixed(1)}px`;
-  };
   const styles = [
     `.s{ 
       shape-rendering: geometricPrecision;
@@ -117,16 +112,11 @@ var lerp = (k, a, b) => (1 - k) * a + k * b, createSnake = (chain, { sizeCell, s
     ...snakeParts.map((positions, i) => {
       const id = `s${i}`;
       const animationName = id;
-      const dMin = sizeDot * 0.75;
-      const dMax = sizeCell * (i === 0 ? 1.55 : 0.9);
-      const keyframes = removeInterpolatedPositions(positions.map((tr, i2, { length }) => ({ ...tr, t: i2 / length }))).map(({ t, ...p }) => ({
-        t,
-        style: i === 0 ? `${transform(p)};${sizeAt(t, dMin, dMax)}` : transform(p)
-      }));
+      const keyframes = removeInterpolatedPositions(positions.map((tr, i2, { length }) => ({ ...tr, t: i2 / length }))).map(({ t, ...p }) => ({ t, style: transform(p) }));
       return [
         createAnimation(animationName, keyframes),
         `.s.${id}{
-          ${transform(positions[0])}${i === 0 ? `;${sizeAt(0, dMin, dMax)}` : ""};
+          ${transform(positions[0])};
           animation-name: ${animationName}
         }`
       ];
@@ -1046,25 +1036,9 @@ var getUserContribution = async (source) => {
       });
   }
 };
-var MARCH_2026 = {
-  "2026-03-18": { count: 4, level: 4 },
-  "2026-03-19": { count: 4, level: 4 },
-  "2026-03-20": { count: 4, level: 4 },
-  "2026-03-21": { count: 2, level: 2 },
-  "2026-03-22": { count: 1, level: 1 },
-  "2026-03-23": { count: 1, level: 1 }
-};
-var sanitizeMarchCells = (cells) => cells.map((cell) => {
-  if (!cell.date.startsWith("2026-03-"))
-    return cell;
-  const allowed = MARCH_2026[cell.date];
-  if (allowed)
-    return { ...cell, count: allowed.count, level: allowed.level };
-  return { ...cell, count: 0, level: 0 };
-});
 var generateSnakeAnimation = async (source, outputs) => {
   console.log(`\uD83C\uDFA3 fetching user contribution from ${source.platform}`);
-  const cells = sanitizeMarchCells(await getUserContribution(source));
+  const cells = await getUserContribution(source);
   const grid = cellsToGrid(cells);
   const snake = snake4;
   console.log("\uD83D\uDCE1 computing best route");
