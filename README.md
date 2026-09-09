@@ -133,18 +133,14 @@ correctness       Zod · Vitest · Playwright · pytest
 ### `06` &nbsp;Build log
 
 ```
-2026-09-09   clip-management-system published to GitHub
 2026-09-06   satquery-ai            seasonality-aware Earth Engine change detection
 2026-08-29   razorflow              post-payment desk state, staff-only policy auth
 2026-08-28   razorflow              hybrid discovery: Gemini intent, deterministic catalog
 2026-08-21   docna                  document workspace pipeline and review UI
 2026-08-18   blueprint              in-blueprint AI assistant with chat and change flow
-2026-03-23   clip-management-system v1.0.0 release and public documentation
-2026-03-22   clip-management-system route review, API client polish, package setup
-2026-03-21   clip-management-system README, backend docs, dependency lock-in
+2026-03-23   clip-management-system v1.0.0 feature complete
 2026-03-20   clip-management-system dashboard, sidebar filters, upload modal
-2026-03-19   clip-management-system React scaffold, clip grid, card, details drawer
-2026-03-18   clip-management-system FastAPI backend, Azure Blob Storage, clip CRUD API
+2026-03-18   clip-management-system FastAPI backend, React frontend, Azure Blob Storage
 ```
 
 <br>
