@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="1200" height="460" role="img" aria-label="One pattern, three products: the model interprets, a validated contract crosses the trust boundary, and deterministic code decides.">
+  <title>One pattern, three products &#8212; model interprets, code decides</title>
+  <defs>
+    <clipPath id="p"><rect x="0.5" y="0.5" width="1199" height="459" rx="18"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#p)">
+    <rect width="1200" height="460" fill="#08090B"/>
+
+    <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">
+      <text x="41" y="52" font-size="11.5" letter-spacing="3" fill="#2DD4BF">ONE PATTERN, THREE PRODUCTS</text>
+
+      <g font-size="10.5" letter-spacing="2.2" fill="#5B6572">
+        <text x="41" y="94">SOURCE</text>
+        <text x="327" y="94">MODEL INTERPRETS</text>
+        <text x="613" y="94">VALIDATED CONTRACT</text>
+        <text x="899" y="94">CODE DECIDES</text>
+      </g>
+
+      <line x1="600" y1="76" x2="600" y2="396" stroke="#2DD4BF" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 5"/>
+      <rect x="588" y="196" width="24" height="112" fill="#08090B"/>
+      <text transform="translate(604 252) rotate(-90)" text-anchor="middle" font-size="9.5" letter-spacing="2.2" fill="#2DD4BF" fill-opacity="0.9">TRUST BOUNDARY</text>
+
+      <g stroke="#4A545F" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M309 148 l5 5 l-5 5"/><path d="M881 148 l5 5 l-5 5"/>
+        <path d="M309 244 l5 5 l-5 5"/><path d="M881 244 l5 5 l-5 5"/>
+        <path d="M309 340 l5 5 l-5 5"/><path d="M881 340 l5 5 l-5 5"/>
+      </g>
+
+      <g fill="#0E1013" stroke="#FFFFFF" stroke-opacity="0.10">
+        <rect x="41" y="110" width="260" height="84" rx="9"/><rect x="327" y="110" width="260" height="84" rx="9"/>
+        <rect x="613" y="110" width="260" height="84" rx="9"/><rect x="899" y="110" width="260" height="84" rx="9"/>
+        <rect x="41" y="206" width="260" height="84" rx="9"/><rect x="327" y="206" width="260" height="84" rx="9"/>
+        <rect x="613" y="206" width="260" height="84" rx="9"/><rect x="899" y="206" width="260" height="84" rx="9"/>
+        <rect x="41" y="302" width="260" height="84" rx="9"/><rect x="327" y="302" width="260" height="84" rx="9"/>
+        <rect x="613" y="302" width="260" height="84" rx="9"/><rect x="899" y="302" width="260" height="84" rx="9"/>
+      </g>
+
+      <g font-size="10.5" letter-spacing="1.8" fill="#2DD4BF">
+        <text x="57" y="134">RAZORFLOW</text>
+        <text x="57" y="230">DOCNA</text>
+        <text x="57" y="326">BLUEPRINT</text>
+      </g>
+
+      <g font-size="12.5" fill="#C3CBD3">
+        <text x="57" y="158">buyer intent in</text><text x="57" y="177">plain language</text>
+        <text x="343" y="158">Gemini extracts a</text><text x="343" y="177">structured intent</text>
+        <text x="629" y="158">category &#183; budget &#183;</text><text x="629" y="177">exclusions &#183; mode</text>
+        <text x="915" y="158">catalog engine ranks,</text><text x="915" y="177">policy caps the offer</text>
+
+        <text x="57" y="254">questions and blanks</text><text x="57" y="273">found in a .docx</text>
+        <text x="343" y="254">AI writes the</text><text x="343" y="273">answer text only</text>
+        <text x="629" y="254">typed PlacementOp</text><text x="629" y="273">values</text>
+        <text x="915" y="254">OOXML adapter edits a</text><text x="915" y="273">copy, not the original</text>
+
+        <text x="57" y="350">a one-line</text><text x="57" y="369">product idea</text>
+        <text x="343" y="350">model returns a</text><text x="343" y="369">structured plan</text>
+        <text x="629" y="350">Zod Blueprint</text><text x="629" y="369">schema</text>
+        <text x="915" y="350">Mermaid diagram built</text><text x="915" y="369">from the plan data</text>
+      </g>
+
+      <text x="41" y="428" font-size="12" fill="#6C7681">Left of the line is interpretation. Right of it is deterministic, reviewable, and testable.</text>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="459" rx="18" fill="none" stroke="#FFFFFF" stroke-opacity="0.09"/>
+</svg>

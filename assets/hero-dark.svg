@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Sai Vidyut C. The model interprets. The code decides.">
+  <title>Sai Vidyut C &#8212; The model interprets. The code decides.</title>
+  <defs>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#FFFFFF" fill-opacity="0.055"/>
+    </pattern>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2DD4BF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#2DD4BF" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2DD4BF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2DD4BF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="panel"><rect x="0.5" y="0.5" width="1199" height="339" rx="18"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#panel)">
+    <rect width="1200" height="340" fill="#08090B"/>
+    <rect width="1200" height="340" fill="url(#dots)"/>
+    <ellipse cx="120" cy="20" rx="520" ry="260" fill="url(#glow)"/>
+    <rect x="-340" y="0" width="340" height="340" fill="url(#sweep)">
+      <animate attributeName="x" values="-340;1200" dur="11s" repeatCount="indefinite"/>
+    </rect>
+
+    <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">
+      <text x="64" y="70" font-size="12.5" letter-spacing="3.2" fill="#2DD4BF" fill-opacity="0.85">github.com/Sai-Vidyut</text>
+    </g>
+
+    <text x="64" y="168" font-family="'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+          font-size="72" font-weight="600" letter-spacing="-1.6" fill="#F4F7F9">Sai Vidyut C</text>
+
+    <rect x="66" y="196" width="300" height="1.6" fill="url(#rule)"/>
+
+    <text x="64" y="240" font-family="'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+          font-size="25" font-weight="400" fill="#AEB8C2">The model interprets.
+      <tspan fill="#F4F7F9" font-weight="500"> The code decides.</tspan>
+    </text>
+    <rect x="536" y="222" width="9" height="21" fill="#2DD4BF">
+      <animate attributeName="opacity" values="1;1;0;0" dur="1.15s" repeatCount="indefinite"/>
+    </rect>
+
+    <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace"
+       font-size="11.5" letter-spacing="2.4" fill="#6C7681">
+      <text x="64" y="292">GEOSPATIAL AI &#160;&#183;&#160; AGENTIC COMMERCE &#160;&#183;&#160; DOCUMENT AUTOMATION</text>
+    </g>
+
+    <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" text-anchor="end">
+      <text x="1136" y="118" font-size="11" letter-spacing="2.6" fill="#4E5761">SELECTED WORK</text>
+      <text x="1136" y="152" font-size="14.5" fill="#DCE3E9">SatQuery AI</text>
+      <text x="1136" y="182" font-size="14.5" fill="#DCE3E9">RazorFlow</text>
+      <text x="1136" y="212" font-size="14.5" fill="#DCE3E9">DocNA</text>
+      <text x="1136" y="242" font-size="14.5" fill="#DCE3E9">BluePrint</text>
+    </g>
+    <g fill="#2DD4BF">
+      <circle cx="1156" cy="147" r="2.6"/>
+      <circle cx="1156" cy="177" r="2.6" fill-opacity="0.72"/>
+      <circle cx="1156" cy="207" r="2.6" fill-opacity="0.5"/>
+      <circle cx="1156" cy="237" r="2.6" fill-opacity="0.32"/>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="339" rx="18" fill="none" stroke="#FFFFFF" stroke-opacity="0.09"/>
+</svg>
