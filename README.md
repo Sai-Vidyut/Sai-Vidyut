@@ -108,7 +108,7 @@ Three of those products are the same idea wearing different clothes.
 
 Smaller things I build to answer a question I actually have.
 
-<img src="https://raw.githubusercontent.com/Sai-Vidyut/Sai-Vidyut/main/assets/radio-auto-scene.jpg" width="100%" alt="Radio Auto's canonical hero plate: the passenger's view from the back seat of a Mumbai auto-rickshaw at night in the rain, looking past the driver onto a wet, traffic-lit street.">
+<img src="https://raw.githubusercontent.com/Sai-Vidyut/Sai-Vidyut/main/assets/radio-auto-scene.jpg" width="58%" alt="Radio Auto's canonical hero plate: the passenger's view from the back seat of a Mumbai auto-rickshaw at night in the rain, looking past the driver onto a wet, traffic-lit street.">
 
 **[Radio Auto](https://github.com/Sai-Vidyut/radio-auto)** — Sit in the back of a Mumbai auto-rickshaw. That plate is the whole product: same driver, same cabin, never swapped. Time and weather are independent axes, so heavy rain works at any hour, and the radio and the weather run on separate audio elements rather than one mixed track.
 
@@ -145,7 +145,7 @@ correctness       Zod · Vitest · Playwright · pytest
 
 ### `07` &nbsp;Signal
 
-A year of commits, eaten in order. Regenerated daily by [a workflow in this repo](.github/workflows/snake.yml) from my actual contribution graph — the SVG is built and served from here, so it cannot break when someone else's free tier does.
+The contribution grid, eaten in order. The dense stretch on the right is everything above — all of it since June 2026. Regenerated daily by [a workflow in this repo](.github/workflows/snake.yml) from the real graph, and served from here rather than a third-party widget, so it cannot break when someone else's free tier does.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sai-Vidyut/Sai-Vidyut/output/snake-dark.svg">
