@@ -138,16 +138,16 @@ correctness       Zod · Vitest · Playwright · pytest
 2026-08-28   razorflow              hybrid discovery: Gemini intent, deterministic catalog
 2026-08-21   docna                  document workspace pipeline and review UI
 2026-08-18   blueprint              in-blueprint AI assistant with chat and change flow
-2026-03-23   clip-management-system clip CRUD, sidebar filters, upload modal, v1.0.0
-2026-03-18   clip-management-system React dashboard, clip grid, Azure-backed API client
-2026-03-12   clip-management-system FastAPI backend, FFmpeg thumbnails, Azure Blob Storage
+2026-03-23   clip-management-system v1.0.0 feature complete
+2026-03-20   clip-management-system dashboard, sidebar filters, upload modal
+2026-03-18   clip-management-system FastAPI backend, React frontend, Azure Blob Storage
 ```
 
 <br>
 
 ### `07` &nbsp;Signal
 
-The contribution grid, eaten in order — the March stretch is [Clip Management System](https://github.com/Sai-Vidyut/clip-management-system); the dense run on the right is everything since June 2026. Regenerated daily by [a workflow in this repo](.github/workflows/snake.yml) and served from the `output` branch, not a third-party widget.
+The contribution grid, eaten in order — six March days for [Clip Management System](https://github.com/Sai-Vidyut/clip-management-system) (18–23), then the dense run since June 2026. The snake grows as it eats. Regenerated daily by [a workflow in this repo](.github/workflows/snake.yml) and served from the `output` branch, not a third-party widget.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sai-Vidyut/Sai-Vidyut/output/snake-dark.svg">

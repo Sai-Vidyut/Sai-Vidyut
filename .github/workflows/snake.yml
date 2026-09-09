@@ -42,6 +42,9 @@ jobs:
             dist/snake-light.svg?color_snake=#0D9488&color_dots=#EDEFF1,#A7E3DA,#5FC7B6,#2AA595,#0D9488
             dist/snake-dark.svg?color_snake=#2DD4BF&color_dots=#151A21,#0E3F3A,#15756A,#1FAE9C,#2DD4BF
 
+      - name: Grow snake head as it eats
+        run: python3 scripts/grow_snake.py dist/snake-light.svg dist/snake-dark.svg
+
       - name: Publish to output branch
         run: |
           set -euo pipefail
