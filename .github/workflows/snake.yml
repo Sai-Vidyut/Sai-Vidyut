@@ -1,0 +1,81 @@
+# Renders the real GitHub contribution graph as a snake animation and publishes
+# the SVGs to the `output` branch. It only visualises existing activity: nothing
+# here writes to `main`, rewrites history, force-pushes, or creates commits that
+# could inflate the contribution graph.
+
+name: snake
+
+on:
+  schedule:
+    # Daily, off-peak and deliberately not on the hour (shared runner contention).
+    - cron: "23 2 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/snake.yml"
+
+# Only the output branch is ever written.
+permissions:
+  contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Render snake from contribution graph
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          # Palette matches the teal accent used across the profile assets.
+          outputs: |
+            dist/snake-light.svg?color_snake=#0D9488&color_dots=#EDEFF1,#A7E3DA,#5FC7B6,#2AA595,#0D9488
+            dist/snake-dark.svg?color_snake=#2DD4BF&color_dots=#151A21,#0E3F3A,#15756A,#1FAE9C,#2DD4BF
+
+      - name: Publish to output branch
+        run: |
+          set -euo pipefail
+
+          for f in dist/snake-light.svg dist/snake-dark.svg; do
+            if [ ! -s "$f" ]; then
+              echo "::error::$f was not generated; leaving the published snake untouched"
+              exit 1
+            fi
+          done
+
+          # Stage outside the work tree so switching branches cannot clobber them.
+          staging="$(mktemp -d)"
+          cp dist/snake-light.svg dist/snake-dark.svg "$staging/"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git ls-remote --exit-code --heads origin output >/dev/null 2>&1; then
+            git fetch origin output
+            git checkout -B output origin/output
+          else
+            git checkout --orphan output
+            git rm -rf . >/dev/null 2>&1 || true
+            find . -mindepth 1 -maxdepth 1 -not -name '.git' -exec rm -rf {} +
+          fi
+
+          cp "$staging/snake-light.svg" "$staging/snake-dark.svg" .
+          git add snake-light.svg snake-dark.svg
+
+          if git diff --cached --quiet; then
+            echo "Contribution graph unchanged since last run; nothing to publish."
+            exit 0
+          fi
+
+          git commit -m "chore(snake): regenerate from contribution graph"
+          # Fast-forward only. Never --force, never a history rewrite.
+          git push origin output

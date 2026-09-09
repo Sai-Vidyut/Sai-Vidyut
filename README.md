@@ -34,13 +34,15 @@ Ask questions about satellite imagery in plain language and get answers you can 
 
 A merchant commerce agent that turns buyer intent into a policy-governed sale. Not a chatbot.
 
+<img src="https://raw.githubusercontent.com/Sai-Vidyut/Sai-Vidyut/main/assets/razorflow-admin.jpg" width="100%" alt="The RazorFlow merchant control plane: captured GMV, order and payment counters including policy blocks, and an audit trail of agent decisions, policy evaluations, checkouts and Razorpay outcomes.">
+
 **Why it exists** — A model that can name products can also invent prices, undercut margin, and sell past a merchant's order cap. No merchant can ship that.
 
 **Key idea** — Gemini only produces a validated `StructuredIntent`: category, budget in paise, exclusions, sort, result mode. It never receives the catalog and never emits a SKU. Deterministic code owns everything downstream — product resolution, filtering, ranking — and a policy engine applies the discount ceiling, margin floor, and order cap to the final offer. Remove the API key and a deterministic parser drives the identical pipeline.
 
 **Stack** — Next.js 16 · TypeScript · PostgreSQL + Prisma · Razorpay · Vitest · Playwright
 
-<sub>Built for the Razorpay Buildathon, AI Growth &amp; Agentic Commerce track. Runs locally against real Razorpay test-mode payments.</sub>
+<sub>Built for the Razorpay Buildathon, AI Growth &amp; Agentic Commerce track. Runs locally. Figures above are the seeded demo merchant on Razorpay test mode — every row is a real audit event, including the declines.</sub>
 
 </td></tr>
 </table>
@@ -106,7 +108,9 @@ Three of those products are the same idea wearing different clothes.
 
 Smaller things I build to answer a question I actually have.
 
-**[Radio Auto](https://github.com/Sai-Vidyut/radio-auto)** — Sit in the back of a Mumbai auto-rickshaw. Same driver, same cabin, one canonical hero plate that never swaps. Time and weather are independent axes, so heavy rain works at any hour, and the radio and the weather run on separate audio elements rather than one mixed track.
+<img src="https://raw.githubusercontent.com/Sai-Vidyut/Sai-Vidyut/main/assets/radio-auto-scene.jpg" width="100%" alt="Radio Auto's canonical hero plate: the passenger's view from the back seat of a Mumbai auto-rickshaw at night in the rain, looking past the driver onto a wet, traffic-lit street.">
+
+**[Radio Auto](https://github.com/Sai-Vidyut/radio-auto)** — Sit in the back of a Mumbai auto-rickshaw. That plate is the whole product: same driver, same cabin, never swapped. Time and weather are independent axes, so heavy rain works at any hour, and the radio and the weather run on separate audio elements rather than one mixed track.
 
 **GeoChat on Colab** — A self-contained notebook that supervises a GPU inference service for the 7B vision model, hardened against OOM during model load and against stale exit-file races when the service restarts. Lives inside [SatQuery AI](https://github.com/Sai-Vidyut/SatQuery-AI).
 
@@ -139,6 +143,17 @@ correctness       Zod · Vitest · Playwright · pytest
 
 <br>
 
-### `07` &nbsp;Contact
+### `07` &nbsp;Signal
+
+A year of commits, eaten in order. Regenerated daily by [a workflow in this repo](.github/workflows/snake.yml) from my actual contribution graph — the SVG is built and served from here, so it cannot break when someone else's free tier does.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sai-Vidyut/Sai-Vidyut/output/snake-dark.svg">
+  <img alt="A snake traversing my GitHub contribution grid, consuming each day's commits in order." src="https://raw.githubusercontent.com/Sai-Vidyut/Sai-Vidyut/output/snake-light.svg" width="100%">
+</picture>
+
+<br>
+
+### `08` &nbsp;Contact
 
 [saividyut4@gmail.com](mailto:saividyut4@gmail.com) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/sai-vidyut-chandramohan-584473406/)
