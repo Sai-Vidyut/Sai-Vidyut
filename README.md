@@ -142,4 +142,4 @@ correctness       Zod · Vitest · Playwright · pytest
 
 ### `07` &nbsp;Contact
 
-[saividyut4@gmail.com](mailto:saividyut4@gmail.com) &nbsp;·&nbsp; [github.com/Sai-Vidyut](https://github.com/Sai-Vidyut)
+[saividyut4@gmail.com](mailto:saividyut4@gmail.com) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/sai-vidyut-chandramohan-584473406/)
