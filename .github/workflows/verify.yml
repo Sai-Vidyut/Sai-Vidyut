@@ -28,7 +28,7 @@ jobs:
 
     steps:
       - name: Check out profile repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: SVG assets are well-formed XML
         run: |
@@ -66,7 +66,7 @@ jobs:
 
     steps:
       - name: Check out profile repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Every URL resolves
         run: |

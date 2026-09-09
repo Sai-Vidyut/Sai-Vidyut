@@ -30,7 +30,7 @@ jobs:
 
     steps:
       - name: Check out profile repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Render snake from contribution graph
         uses: Platane/snk/svg-only@v3
