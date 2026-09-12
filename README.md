@@ -145,17 +145,6 @@ correctness       Zod · Vitest · Playwright · pytest
 
 <br>
 
-### `07` &nbsp;Signal
-
-The contribution grid, eaten in order — the dense run since June 2026. Regenerated daily by [a workflow in this repo](.github/workflows/snake.yml) and served from the `output` branch.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sai-Vidyut/Sai-Vidyut/output/snake-dark.svg">
-  <img alt="A snake traversing my GitHub contribution grid, consuming each day's commits in order." src="https://raw.githubusercontent.com/Sai-Vidyut/Sai-Vidyut/output/snake-light.svg" width="100%">
-</picture>
-
-<br>
-
-### `08` &nbsp;Contact
+### `07` &nbsp;Contact
 
 [saividyut4@gmail.com](mailto:saividyut4@gmail.com) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/sai-vidyut-chandramohan-584473406/)
